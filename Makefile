@@ -12,7 +12,7 @@ all: dirs
 	$(CC) $(INCLUDE) $(SRC) -o $(BIN_DIR)/$(APPLICATION_NAME)
 
 dirs:
-	@mkdir $(BIN_DIR)
+	@mkdir -p $(BIN_DIR)
 
 clean:
 	rm -rf $(BIN_DIR)
